@@ -10,6 +10,7 @@ const App = () => {
 
   const [users, setUsers] = useState(data);
 
+  // adding a useless comment here
   const deleteItem = (index) => {
     console.log("users before", users);
     const deletedarray = [...users.slice(0, index), ...users.slice(index + 1)];
