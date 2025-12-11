@@ -17,6 +17,7 @@ const App = () => {
     console.log("clicked", deletedarray);
   };
 
+  // this blocks and unblocks a user
   const blockChanger = (index) => {
     const items = [...users];
     items[index].blocked = !items[index].blocked;
