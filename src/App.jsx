@@ -10,7 +10,6 @@ const App = () => {
 
   const [users, setUsers] = useState(data);
 
-  // adding a useless comment here
   const deleteItem = (index) => {
     console.log("users before", users);
     const deletedarray = [...users.slice(0, index), ...users.slice(index + 1)];
@@ -18,6 +17,7 @@ const App = () => {
     console.log("clicked", deletedarray);
   };
 
+  // this blocks and unblocks a user
   const blockChanger = (index) => {
     const items = [...users];
     items[index].blocked = !items[index].blocked;
